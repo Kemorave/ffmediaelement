@@ -276,7 +276,7 @@
             Content = ContentGrid;
 
             // Set some layout defaults
-            ContentGrid.HorizontalAlignment = HorizontalAlignment.Stretch;
+            /*ContentGrid.HorizontalAlignment = HorizontalAlignment.Stretch;
             ContentGrid.VerticalAlignment = VerticalAlignment.Stretch;
             ContentGrid.UseLayoutRounding = true;
             ContentGrid.SnapsToDevicePixels = true;
@@ -310,12 +310,12 @@
 
             // Position the Captions View
             CaptionsView.HorizontalAlignment = HorizontalAlignment.Left;
-            CaptionsView.VerticalAlignment = VerticalAlignment.Top;
+            CaptionsView.VerticalAlignment = VerticalAlignment.Top;*/
 
             // Compose the control by adding overlapping children
             ContentGrid.Children.Add(VideoView);
-            ContentGrid.Children.Add(SubtitlesView);
-            ContentGrid.Children.Add(CaptionsView);
+            //ContentGrid.Children.Add(SubtitlesView);
+            //ContentGrid.Children.Add(CaptionsView);
 
             UpdateDesignView();
 

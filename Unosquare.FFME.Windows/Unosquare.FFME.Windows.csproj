@@ -9,7 +9,7 @@
     <RootNamespace>Unosquare.FFME</RootNamespace>
     <LangVersion>latest</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <AssemblyName>ffme.win</AssemblyName>
     <Product>FFME: The Adavanced WPF MediaElement Alternative</Product>
     <Company>Unosquare SA de CV</Company>
@@ -43,6 +43,10 @@
     <RepositoryUrl>https://github.com/unosquare/ffmediaelement</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net461|AnyCPU'">
+    <WarningsAsErrors />
   </PropertyGroup>
 
   <ItemGroup>
